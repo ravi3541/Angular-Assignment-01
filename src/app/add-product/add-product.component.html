@@ -1,0 +1,106 @@
+<!-- <h1>{{productForm.value | json}}</h1> -->
+
+<div class="container d-flex justify-content-center">
+<div class="card m-5 p-5" style="width:77vh;" >
+    <h1 class="card-title ">Add Product</h1>
+<form [formGroup]="productForm" (ngSubmit)="getProductDetails(productForm.value)">
+
+    <table>
+        <tr class="form-group">
+            <td>
+                <label for="" class="form-label  mt-3 ">Product ID</label>
+            </td>
+            <td>
+                <input [class.is-invalid]="id.invalid && id.touched" type="text" formControlName="id" class="form-control mt-3" id="" placeholder="Product Name">
+                <small *ngIf="id.invalid && id.touched" class="text-danger">Only Alphanumeric's accepted</small>
+            </td>
+        </tr>
+
+        <tr class="form-group ">
+            <td>
+                <label for="" class="form-label mt-3">Product Name</label>
+            </td>
+            <td>
+                <input [class.is-invalid]="name.invalid && name.touched" type="text" formControlName="name" class="form-control mt-3" id="" placeholder="Product Name">
+                <small *ngIf="name.invalid && name.touched" class="text-danger">Maximum 30 Characters allowed</small>
+            </td>
+        </tr>
+
+        <tr class="form-group">
+            <td>
+                <label for="" class="form-label mt-3">Category</label>
+            </td>
+            <td>
+                <select [class.is-invalid]="category.invalid && category.touched" formControlName="category" class="form-control mt-3">
+           
+                    <option *ngFor="let op of categories" aria-placeholder="Select Category" [value]="op">
+                        {{op}}
+                    </option>
+                </select>
+                <small *ngIf="category.invalid && category.touched" class="text-danger">Please Choose Category</small>
+            </td>
+        </tr>
+
+        <tr class="form-group ">
+            <td>
+                <label for="" class="mt-3">Price</label>
+            </td>
+            <td>
+                <input [class.is-invalid]="price.invalid && price.touched" type="text" formControlName="price" class="form-control mt-3" placeholder="473.29" name="" id="">
+                <small *ngIf="price.invalid && price.touched" class="text-danger">Please enter only numerics</small>
+            </td>
+        </tr>
+
+        <tr class="form-group ">
+            <td>
+                <label for="" class="mt-3">Model Number</label>
+            </td>
+            <td>
+                <input [class.is-invalid]="model_no.invalid && model_no.touched" type="text" formControlName="model_no" class="form-control mt-3" placeholder="Model" name="" id="">
+                <small *ngIf="model_no.invalid && model_no.touched" class="text-danger">Only Alphanumeric's accepted</small>
+            </td>
+        </tr>
+
+        <tr class="form-group">
+            <td>
+                <label for="">Release Date</label>
+            </td>
+            <td>
+                <input [class.is-invalid]="release_date.invalid && release_date.touched" type="date" max="{{today}}" formControlName="release_date" class="form-control mt-3" name="" id="">
+                <small *ngIf="release_date.invalid && release_date.touched" class="text-danger">Please choose corect Date</small>
+            </td>
+        </tr>
+
+        <tr class="form-group m-5">
+            <td>
+                <label for="">Units</label>
+            </td>
+            <td>
+                <input [class.is-invalid]="units.invalid && units.touched" type="text" formControlName="units" class="form-control mt-3" placeholder="13" name="" id="">
+                <small *ngIf="units.invalid && units.touched" class="text-danger">Only Numbers accepted</small>
+            </td>
+        </tr>
+
+        <tr class="form-group m-5">
+            <td>
+                <label for="" class="mt-3">Description</label>
+            </td>
+            <td>
+                <textarea [class.is-invalid]="desc.invalid && desc.touched" type="text" type="text" formControlName="desc" class="form-control mt-3" placeholder="Product Description" name="" id=""></textarea>
+                <small *ngIf="desc.invalid && desc.touched" class="text-danger">Maximum 150 characters allowed</small>
+            </td>
+        </tr>
+
+        <tr class="form-group p-5">
+            <td><button class="btn btn-success mt-3" routerLink="/productList" type="submit">Cancel</button></td>
+            <td>
+                <button [disabled]="productForm.invalid" class="btn btn-success mt-3" type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+
+    
+</form>
+
+</div>
+</div>

@@ -1,0 +1,124 @@
+{
+  "Products": [
+    {
+      "id": "1002",
+      "name": "TV",
+      "category": "Electronics",
+      "price": 45000,
+      "model_no": "Bravia",
+      "release_date": "3/4/2019",
+      "units": 5,
+      "desc": "64 inch Oled Tv"
+    },
+    {
+      "id": "1003",
+      "name": "Microwave",
+      "category": "Kitchen Appliances",
+      "price": 10000,
+      "model_no": "Zen2",
+      "release_date": "25/7/2013",
+      "units": 9,
+      "desc": "Energy efficient Microwave"
+    },
+    {
+      "id": "1004",
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 25000,
+      "model_no": "m21",
+      "release_date": "2021-05-20",
+      "units": "24",
+      "desc": "48 mp rear camera, 20 mp front"
+    },
+    {
+      "id": "lap52",
+      "name": "laptop",
+      "category": "Electronics",
+      "price": "45000.87",
+      "model_no": "Elitebook42",
+      "release_date": "2022-04-05",
+      "units": "22",
+      "desc": "Laptop with free printer"
+    },
+    {
+      "id": "mob43",
+      "name": "mobile",
+      "category": "Electronics",
+      "price": "54000.83",
+      "model_no": "v43",
+      "release_date": "2022-04-20",
+      "units": "19",
+      "desc": "smartphone"
+    },
+    {
+      "id": "MxGr2502W",
+      "name": "Mixer Grinder",
+      "category": "Kitchen Appliances",
+      "price": "5000.643",
+      "model_no": "M4",
+      "release_date": "2022-04-22",
+      "units": "12",
+      "desc": "250 Watt Mixer Grinder"
+    },
+    {
+      "id": "disugk",
+      "name": "ufjvu",
+      "category": "Fashion",
+      "price": "85",
+      "model_no": "65td",
+      "release_date": "2022-04-07",
+      "units": "23",
+      "desc": "wesdfcd"
+    },
+    {
+      "id": "10096",
+      "name": "Microwave",
+      "category": "Kitchen Appliances",
+      "price": 10000,
+      "model_no": "Zen2",
+      "release_date": "25/7/2013",
+      "units": 9,
+      "desc": "Energy efficient Microwave"
+    },
+    {
+      "id": "fdskj",
+      "name": "Microwave",
+      "category": "Kitchen Appliances",
+      "price": 10000,
+      "model_no": "Zen2",
+      "release_date": "25/7/2013",
+      "units": 9,
+      "desc": "Energy efficient Microwave"
+    },
+    {
+      "id": "sdfsdf",
+      "name": "sdfsdf",
+      "category": "Grocery",
+      "price": "23",
+      "model_no": "sdf",
+      "release_date": "2022-03-29",
+      "units": "23",
+      "desc": "sdfs"
+    },
+    {
+      "id": "kyfjf",
+      "name": "udhc",
+      "category": "Electronics",
+      "price": "76",
+      "model_no": "jxfy",
+      "release_date": "2023-05-23",
+      "units": "6",
+      "desc": "rtdftxgfddffffffffffffffffffffffffffffffffff"
+    },
+    {
+      "id": "726",
+      "name": "wuwii",
+      "category": "Electronics",
+      "price": "786",
+      "model_no": "ifityd",
+      "release_date": "2022-04-12",
+      "units": "23",
+      "desc": "adfcsd"
+    }
+  ]
+}

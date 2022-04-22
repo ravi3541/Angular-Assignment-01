@@ -1,0 +1,36 @@
+<div class="m-5 d-flex flex-column ">
+    <div class="d-flex flex-row justify-content-between m-5">
+       
+        <h2 class="h1">Product List</h2>
+       
+            <a routerLink="/add-product" class="btn btn-primary h1"> Add Product</a>
+        
+    </div>
+    
+<div class="overflow-auto">
+    <table class="table table-striped m-5 overflow-auto">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                
+                <th>Units</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr routerLink="/view-product/{{p.id}}" *ngFor = 'let p of allProducts'>
+                
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.category}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.units}}</td>
+              
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
