@@ -1,27 +1,4 @@
 # AngularAssignment
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Screenshot from 2022-04-22 20-32-35](https://user-images.githubusercontent.com/63633296/164769094-b176e8e5-4082-4fb5-88bb-7487dcad890a.png)
+![Screenshot from 2022-04-22 20-32-39](https://user-images.githubusercontent.com/63633296/164769103-c940e922-0350-4cd5-b427-3585e464e11a.png)
+![Screenshot from 2022-04-22 20-32-43](https://user-images.githubusercontent.com/63633296/164769112-44eaea33-334e-47c3-8ce0-34c6e646124b.png)
