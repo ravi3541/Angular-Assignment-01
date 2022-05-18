@@ -1,7 +1,7 @@
 import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AllProductService } from '../all-product.service';
+import { AllProductService } from '../../all-product.service';
 
 @Component({
   selector: 'app-product-details',
@@ -41,7 +41,8 @@ export class ProductDetailsComponent implements OnInit {
         {
           this.name = p.name
           this.category = p.category
-          this.price = p.price
+          var a = p.price * 77
+          this.price = a.toString()
           this.model = p.model_no
           this.release_date = p.release_date
           this.units = p.units
