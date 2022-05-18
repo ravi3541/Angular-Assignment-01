@@ -3,7 +3,7 @@
        
         <h2 class="h1">Product List</h2>
        
-            <a routerLink="/addProduct" class="btn btn-primary h1"> Add Product</a>
+            <a routerLink="/feature/add-product" class="btn btn-primary h1"> Add Product</a>
         
     </div>
     
@@ -21,7 +21,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr routerLink="/viewProduct/{{p.id}}" *ngFor = 'let p of allProducts'>
+            <tr routerLink="/feature/product-details/{{p.id}}" *ngFor = 'let p of allProducts'>
                 
                 <td>{{p.id}}</td>
                 <td>{{p.name}}</td>

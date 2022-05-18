@@ -29,7 +29,38 @@
       "release_date": "2021-05-20",
       "units": "24",
       "desc": "48 mp rear camera, 20 mp front"
+    },
+    {
+      "id": "100uid",
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": "93720",
+      "model_no": "JDI8FT",
+      "release_date": "2019-05-19",
+      "units": "11",
+      "desc": "Gaming Laptop"
+    },
+    {
+      "id": "Tts6wA-",
+      "name": null,
+      "category": null,
+      "price": null,
+      "model_no": null,
+      "release_date": null,
+      "units": null,
+      "desc": null
     }
-    
+  ],
+  "user": [
+    {
+      "utype": "user",
+      "email": "ravi@gmail.com",
+      "pass": "ravi123"
+    },
+    {
+      "utype": "admin",
+      "email": "rajat@gmail.com",
+      "pass": "rajat123"
+    }
   ]
 }

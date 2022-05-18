@@ -1,15 +1,15 @@
 <div class="m-5 h2">
     <ul>
         <li>ID :            <span>{{id}}</span></li>
-        <li>Name:           <span>{{name}}</span></li>
+        <li>Name:           <span>{{name | uppercase}}</span></li>
         <li>Price:          <span>{{price | currency:'USD'}}</span></li>
         <li>Category:       <span>{{category}}</span></li>
         <li>Model no:       <span>{{model}}</span></li>
-        <li>Release date:   <span>{{release_date}}</span></li>
-        <li>Stock Units:    <span>{{units}}</span></li>
+        <li>Release date:   <span>{{release_date|date:'mediumDate'}}</span></li>
+        <li>Stock Units:    <span>{{units}}</span><span></span></li>
         <li>Description:    <span>{{desc}}</span></li>
     </ul>
 
-    <button class="btn btn-warning h1"  routerLink="/productList">Back</button>
+    <button class="btn btn-warning h1"  routerLink="/feature/product-list">Back</button>
 </div>
 

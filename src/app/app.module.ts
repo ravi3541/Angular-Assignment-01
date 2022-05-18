@@ -19,11 +19,12 @@ import { FeatureModule } from './feature/feature.module';
 
   ],
   imports: [
+    AuthModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AuthModule
+    
     
     
   ],

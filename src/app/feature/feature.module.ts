@@ -26,4 +26,8 @@ import { AuthModule } from '../auth/auth.module';
   ]
 })
 
-export class FeatureModule { }
+export class FeatureModule {
+  constructor(){
+    console.warn("Feature module loaded")
+  }
+ }
