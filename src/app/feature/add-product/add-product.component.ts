@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AllProductService } from '../../all-product.service';
+import { AllProductService } from '../services/all-product.service';
 import { FormGroup,FormControl, Validators,ReactiveFormsModule } from '@angular/forms';
 import { Router} from '@angular/router';
 
@@ -21,9 +21,7 @@ export class AddProductComponent implements OnInit {
     this.categories = ['Kitchen Appliances','Electronics','Wearables', 'Fashion','Grocery','Travel']
    }
 
-  //  showToaster(msg:string){
-  //   this.toastr.success(msg)
-  //   }
+ 
 
 
    defMaxDate()
@@ -155,9 +153,9 @@ export class AddProductComponent implements OnInit {
         console.warn("Data saved",result)
         this.saved = true;
         if(this.saved == true){
-          //this.showToaster("Data Saved Successfully")
+          
           console.log("Data Saved Successfully")
-          this.route.navigate(['/productList'])
+          this.route.navigate(['/feature/product-list'])
         }
         
       })

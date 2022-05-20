@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { PreloadingStrategy, RouterModule, Routes } from '@angular/router';
+import {  RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './auth/not-found/not-found.component';
 import { UnauthorizedComponent } from './auth/unauthorized/unauthorized.component';
 

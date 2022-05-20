@@ -3,14 +3,14 @@
        
         <h2 class="h1">Product List</h2>
        
-            <a routerLink="/feature/add-product" class="btn btn-primary h1"> Add Product</a>
+            <a routerLink="/feature/add-product" class="btn btn-primary "><h5>Add Product</h5></a>
         
     </div>
     
-<div class="overflow-auto">
+<div class="overflow-auto border border-2 rounded rounded-3 border-warning  h4">
     <table class="table table-striped m-5 overflow-auto">
         <thead>
-            <tr>
+            <tr class="bg-secondary text-light">
                 <th>ID</th>
                 <th>Name</th>
                 <th>Category</th>
@@ -27,7 +27,22 @@
                 <td>{{p.name}}</td>
                 <td>{{p.category}}</td>
                 <td>{{p.price}}</td>
-                <td>{{p.units}}</td>
+                <td>
+                    <div *ngIf="p.units > 10;">
+                        <span style="color: rgb(27, 160, 27);">Availabe {{p.units}} left</span>
+                      </div>
+        
+                      <div *ngIf="p.units <= 10 && p.units > 3;">
+                        <span style="color:rgb(235, 118, 15);">Only
+                          {{p.units}} left </span>
+                      </div>
+        
+                      <div *ngIf="p.units <= 3;">
+                        <span style="color:rgb(240, 82, 82);">Only
+                          {{p.units}} left </span>
+                      </div>
+                    
+                    </td>
               
             </tr>
         </tbody>

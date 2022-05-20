@@ -11,11 +11,7 @@ export class AllProductService {
   constructor(private http:HttpClient) { }
 
 
-  // getAllProducts():Observable<Product[]>{
-  //   const url = "http://localhost:3000/Products"
-
-  //   return this.http.get<Product[]>(url);
-  // }
+  
 
   
   url = "http://localhost:3000/Products"

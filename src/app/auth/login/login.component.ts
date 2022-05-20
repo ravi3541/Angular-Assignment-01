@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormBuilder,FormGroup } from '@angular/forms';
+import { FormBuilder,FormControl,FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+
 
 
 @Component({
@@ -11,16 +12,39 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent implements OnInit {
 
-  public loginform: FormGroup;
+  loginform:FormGroup 
 
   constructor(private route:Router,private formBuilder:FormBuilder, private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.loginform = this.formBuilder.group({
-      email:[''],
-      pass:['']
+    
+
+    this.loginform= new FormGroup({
+      email: new FormControl('',[
+        Validators.required,
+        Validators.pattern('^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,4})(\.[a-z]{2,8})?$')
+  
+      ]),
+      pass: new FormControl('',[
+        Validators.required,
+        Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[&.!@$]).{8,32}$')
+      
+      ])
     })
+    
   }
+
+
+  get email(){
+    console.warn("returning Email")
+    return this.loginform.get('email')
+  }
+
+  get pass(){
+    console.warn("returning Pass")
+    return this.loginform.get('pass')
+  }
+
 
   login(){
     this.http.get<any>("http://localhost:3000/user").subscribe(res => {
@@ -32,7 +56,7 @@ export class LoginComponent implements OnInit {
       if (user){
         console.warn(user.utype)
         alert("login Successfull")
-        // this.loginform.reset()
+        
         this.route.navigate(['feature'])
         localStorage.setItem('utype',user.utype)
         localStorage.setItem('email',user.email)
@@ -43,7 +67,7 @@ export class LoginComponent implements OnInit {
 
       }else{
         alert("Login Failed")
-        //this.route.navigate(['login'])
+        
       }
     })
 

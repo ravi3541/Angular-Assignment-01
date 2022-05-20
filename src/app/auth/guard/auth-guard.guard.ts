@@ -15,7 +15,7 @@ export class AuthGuardGuard implements CanActivate {
     if(bool){
       return true;
     }
-    alert("Please Login to access this page")
+    alert("You haven't logged in")
     this.route.navigate(['auth'])
     return false
   }

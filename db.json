@@ -37,30 +37,50 @@
       "price": "93720",
       "model_no": "JDI8FT",
       "release_date": "2019-05-19",
-      "units": "11",
+      "units": "2",
       "desc": "Gaming Laptop"
     },
     {
-      "id": "Tts6wA-",
-      "name": null,
-      "category": null,
-      "price": null,
-      "model_no": null,
-      "release_date": null,
-      "units": null,
-      "desc": null
+      "id": "CPW837",
+      "name": "Laptop Bag",
+      "category": "Travel",
+      "price": "503.82",
+      "model_no": "TWO772",
+      "release_date": "2024-07-16",
+      "units": "22",
+      "desc": "Travel cum Laptop bag"
+    },
+    {
+      "id": "OW98",
+      "name": "Suitcase",
+      "category": "Travel",
+      "price": "8892.20",
+      "model_no": "Iw75",
+      "release_date": "2020-04-18",
+      "units": "3",
+      "desc": "30 L suitcase"
+    },
+    {
+      "id": "QYT765",
+      "name": "Bluetooth Ear buds",
+      "category": "Electronics",
+      "price": "399.87",
+      "model_no": "smartBuds2",
+      "release_date": "2022-05-11",
+      "units": "10",
+      "desc": "TWS Bluetooth Earbuds"
     }
   ],
   "user": [
     {
       "utype": "user",
       "email": "ravi@gmail.com",
-      "pass": "ravi123"
+      "pass": "ravi@123"
     },
     {
       "utype": "admin",
       "email": "rajat@gmail.com",
-      "pass": "rajat123"
+      "pass": "rajat@123"
     }
   ]
 }

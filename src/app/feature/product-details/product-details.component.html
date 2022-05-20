@@ -1,15 +1,55 @@
 <div class="m-5 h2">
-    <ul>
-        <li>ID :            <span>{{id}}</span></li>
-        <li>Name:           <span>{{name | uppercase}}</span></li>
-        <li>Price:          <span>{{price | currency:'USD'}}</span></li>
-        <li>Category:       <span>{{category}}</span></li>
-        <li>Model no:       <span>{{model}}</span></li>
-        <li>Release date:   <span>{{release_date|date:'mediumDate'}}</span></li>
-        <li>Stock Units:    <span>{{units}}</span><span></span></li>
-        <li>Description:    <span>{{desc}}</span></li>
-    </ul>
+    <table class="table table-success table-striped border border-2 rounded rounded-3">
+        <tbody>
+        <tr>
+            <td>ID :</td>
+            <td>{{id}}</td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td>{{name | uppercase}}</td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td>{{price | currency:'USD'}}</td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>{{category}}</td>
+        </tr>
+        <tr>
+            <td>Model no:</td>
+            <td>{{model}}</td>
+        </tr>
+        <tr>
+            <td>Release date:</td>
+            <td>{{release_date|date:'mediumDate'}}</td>
+        </tr>
+        <tr>
+            <td>Stock Units:</td>
+            <td><div *ngIf="units > 10;">
+                <span style="color: rgb(27, 160, 27);">Availabe {{units}} left</span>
+              </div>
 
-    <button class="btn btn-warning h1"  routerLink="/feature/product-list">Back</button>
+              <div *ngIf="units <= 10 && units > 3;">
+                <span style="color:rgb(235, 118, 15);">Only
+                  {{units}} left </span>
+              </div>
+
+              <div *ngIf="units <= 3;">
+                <span style="color:rgb(240, 82, 82);">Only
+                  {{units}} left </span>
+              </div>
+                </td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td>{{desc}}</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <button class="btn btn-warning " routerLink="/feature/product-list">
+        <h4>Back</h4>
+    </button>
 </div>
-

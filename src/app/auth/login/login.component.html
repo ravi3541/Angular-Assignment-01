@@ -1,21 +1,27 @@
-<div class="d-flex justify-content-center my-5 py-5">
-    <form [formGroup]="loginform" (ngSubmit)="login()">
-        <h5 class="h5 pb-2">Login</h5>
-        <div class="row mb-3">
-          <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+<div class="bg d-flex justify-content-center my-5 py-5">
+    <form class="card rounded rounded-3" [formGroup]="loginform" (ngSubmit)="login()">
+        <h1 class=" pb-2 mb-2">Login</h1>
+        <div class="form-group  row mb-3 mt-2">
+          <!-- <label for="inputEmail3" class="col-sm-3 col-form-label  form-control-lg">Email</label> -->
+          <i class="fa-solid fa-user form-control-lg col-sm-3"></i>
           <div class="col-sm-9">
-            <input formControlName="email" type="email" class="form-control" id="">
+            <input [class.is-invalid]="email.invalid && email.touched" formControlName="email"  class="form-control form-control-lg" >
+            <small *ngIf="email.invalid && email.touched" class="text-danger">Enter Valid Email Id</small>
+           
+            
           </div>
         </div>
-        <div class="row mb-3">
-          <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+        <div class="form-group row mb-3 mt-2">
+          <!-- <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label> -->
+          <i class="fa-solid fa-lock form-control-lg col-sm-3"></i>
           <div class="col-sm-9">
-            <input formControlName="pass" type="password" class="form-control" id="">
+            <input [class.is-invalid]="pass.invalid && pass.touched" formControlName="pass" type="password" class="form-control form-control-lg" >
+            <small *ngIf="pass.invalid && pass.touched" class="text-danger">Minimum 8 Numbers, special characters, and alphabets required</small>
           </div>
         </div>
         
       
-        <button type="submit"  class="btn btn-primary">Sign in</button>
+        <button [disabled]="loginform.invalid" type="submit"  class="mt-2 btn btn-primary form-control form-control-lg">Sign in</button>
       </form>
 </div>
 

@@ -7,8 +7,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { AuthModule } from '../auth/auth.module';
+import {  ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
