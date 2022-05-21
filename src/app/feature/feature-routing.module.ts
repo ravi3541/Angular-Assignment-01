@@ -13,7 +13,9 @@ const routes: Routes = [
     {path:'welcome',component:WelcomeScreenComponent,canActivate:[AuthGuardGuard]},
     {path:'product-list',component:ProductListComponent,canActivate:[AuthGuardGuard]},
     {path:'add-product',component:AddProductComponent,canActivate:[AuthGuardGuard,RoleGuardGuard]},
-    {path:'product-details/:id',component:ProductDetailsComponent,canActivate:[AuthGuardGuard,RoleGuardGuard]}
+    {path:'product-details/:id',component:ProductDetailsComponent,canActivate:[AuthGuardGuard,RoleGuardGuard]},
+    
+
   ]}
 ];
 
@@ -21,4 +23,8 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class FeatureRoutingModule { }
+export class FeatureRoutingModule { 
+  constructor(){
+    console.warn("Feature module loaded")
+  }
+}

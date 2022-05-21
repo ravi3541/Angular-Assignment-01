@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
   constructor(private route:Router,private formBuilder:FormBuilder, private http:HttpClient) { }
 
   ngOnInit(): void {
+
+    
     
 
     this.loginform= new FormGroup({
@@ -36,17 +38,22 @@ export class LoginComponent implements OnInit {
 
 
   get email(){
-    console.warn("returning Email")
+   
     return this.loginform.get('email')
   }
 
   get pass(){
-    console.warn("returning Pass")
+   
     return this.loginform.get('pass')
   }
 
 
+
   login(){
+    
+    console.log(localStorage.getItem('email'))
+    console.log(localStorage.getItem('utype'))
+
     this.http.get<any>("http://localhost:3000/user").subscribe(res => {
       const user = res.find((u:any)=>{
         console.warn("email"+this.loginform.value.email)

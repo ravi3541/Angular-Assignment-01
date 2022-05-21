@@ -5,7 +5,7 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { FeatureModule } from '../feature/feature.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 
 
@@ -26,7 +26,5 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 })
 
 export class AuthModule {
-  constructor(){
-    console.warn("Auth module loaded")
-  }
+  
  }

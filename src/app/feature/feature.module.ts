@@ -27,7 +27,5 @@ import {  ReactiveFormsModule } from '@angular/forms';
 })
 
 export class FeatureModule {
-  constructor(){
-    console.warn("Feature module loaded")
-  }
+  
  }
